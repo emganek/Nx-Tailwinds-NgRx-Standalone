@@ -1,0 +1,8 @@
+<h1>Oliver Sacks Books Collection</h1>
+
+<h2>Books</h2>
+<integrated-angular-book-list class="book-list" [books]="(books$ | async)!" (add)="onAdd($event)"></integrated-angular-book-list>
+
+<h2>My Collection</h2>
+<integrated-angular-book-collection class="book-collection" [books]="(bookCollection$ | async)!" (remove)="onRemove($event)">
+</integrated-angular-book-collection>
